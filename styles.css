@@ -1,0 +1,168 @@
+/* Grundlegende Reset-Regeln und Basis-Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ermöglicht die Fußzeile, am Boden zu bleiben */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Flex-Container für den Hauptinhalt und den Footer */
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    flex: 1;
+    text-align: left;
+}
+
+.content-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.machine-image {
+        max-width: 40vw;
+		max-height: 30vw;
+    height: auto;
+}
+
+.price-table {
+    margin-left: 20px; /* Abstand zwischen Bild und Tabelle */
+    border-collapse: collapse;
+    max-width: 600px; /* Maximale Breite der Tabelle */
+}
+
+.price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.price-table th {
+    background-color: #333;
+    color: white;
+}
+
+.price-table tbody tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+.price-table tbody tr:hover {
+    background-color: #e7e7e7;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
+/* Top-Bar für die Rufnummer */
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Logo-Bar mit Platz für ein Logo */
+.logo-bar {
+    background-color: orange;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Höhe des Logos */
+		padding-left: 20%
+}
+
+/* Navigation-Styling */
+nav {
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkslategray;
+    padding: 10px;
+    display: block;
+}
+
+/* Hervorhebung für Menüelemente beim Darüberfahren */
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #ddd; /* Farbe für das Hover */
+    color: black;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px; /* Breite der Dropdown-Menüs */
+    background-color: #f8f8f8;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Inhaltsbereich */
+.content {
+    padding: 20px;
+    background-color: #fff;
+    flex: 1; /* Nimmt verfügbaren Platz ein, um den Footer unten zu halten */
+}
+
+/* Footer-Bereich */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Schiebt den Footer nach unten */
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
