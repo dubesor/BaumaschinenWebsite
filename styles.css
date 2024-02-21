@@ -46,7 +46,7 @@ body {
 }
 
 .price-table {
-    margin-left: 20px; /* Abstand zwischen Bild und Tabelle */
+    margin-left: 0px; /* Abstand zwischen Bild und Tabelle */
     border-collapse: collapse;
     max-width: 600px; /* Maximale Breite der Tabelle */
 }
