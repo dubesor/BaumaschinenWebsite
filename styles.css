@@ -35,6 +35,10 @@ body {
     padding: 10px;
 }
 
+ .content ul {
+        padding-left: 20px; /* Platz links für die Auflistung */
+}
+
 .machine-image {
         max-width: 40vw;
 		max-height: 30vw;
