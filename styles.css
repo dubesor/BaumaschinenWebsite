@@ -33,7 +33,6 @@ body {
 .content-column {
     flex: 1;
     padding: 10px;
-		padding-bottom: 80px; /* Passt die Höhe entsprechend der Höhe des Footers an */
 }
 
 .machine-image {
@@ -154,14 +153,9 @@ nav ul li:hover ul {
 footer {
     background-color: #333;
     color: white;
-    padding: 6px;
+    padding: 20px;
     text-align: center;
     margin-top: auto; /* Schiebt den Footer nach unten */
-	position: fixed;
-bottom: 0;
-left: 0;
-width: 100%;
-
 }
 
 footer a {
