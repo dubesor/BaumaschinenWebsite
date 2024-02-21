@@ -13,3 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Script zum Merken der Menüauswahl			
+document.addEventListener("DOMContentLoaded", function() {
+    var currentPath = window.location.pathname;
+
+    var menuItems = document.querySelectorAll("nav ul li a");
+
+    menuItems.forEach(function(item) {
+        var itemPath = new URL(item.href).pathname; // Extraktet den URL namen vom Linkattribut
+        if (itemPath === currentPath) {
+            item.classList.add("active");
+        }
+    });
+});
+

@@ -136,6 +136,18 @@ nav ul li a:hover, nav ul li a:focus {
     color: black;
 }
 
+/* Hervorhebung für das aktive Menüelement */
+nav ul li a.active {
+    background-color: #ddd; /* Hintergrundfarbe für das aktive Element */
+    color: black;
+}
+
+nav ul li a.active:hover {
+    background-color: #ddd; /* Hintergrundfarbe bleibt beim Hover über das aktive Element */
+    color: black;
+}
+
+
 nav ul li ul {
     display: none;
     position: absolute;
