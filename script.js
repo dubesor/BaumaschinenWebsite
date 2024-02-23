@@ -28,3 +28,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Pageload Popup
+window.onload = function() {
+  var modal = document.getElementById("demoPopup");
+  modal.style.display = "block"; // Show the modal
+  span.onclick = function() {
+    modal.style.display = "none"; // Hide the modal
+  }
+}
+// POPUP Schliessen
+var span = document.getElementsByClassName("close")[0];
+
+
+
+// Popupschließen 2
+window.onclick = function(event) {
+  var modal = document.getElementById("demoPopup");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
