@@ -254,6 +254,8 @@ footer a:hover {
 .hamburger-menu {
     display: none; /* Hide by default */
     cursor: pointer;
+	padding: 10px;
+	font-size: 20px;
     /* Additional styling as needed */
 }
 
