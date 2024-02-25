@@ -50,3 +50,13 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+// Hamburger menu mobile
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('show');
+    });
+});
+
+
