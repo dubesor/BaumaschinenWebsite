@@ -1,3 +1,4 @@
+/* aktuell ungenutzt
 // Einfaches Script für ein Dropdown-Menü
 document.addEventListener('DOMContentLoaded', function() {
     // Alle Menüpunkte mit Untermenüs
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+*/
 
 // Pageload Popup
 window.onload = function() {
