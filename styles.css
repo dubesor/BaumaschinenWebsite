@@ -7,6 +7,8 @@
 
 html, body {
     height: 100%; /* Ermöglicht die Fußzeile, am Boden zu bleiben */
+	max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -106,6 +108,16 @@ p {
 		    align-items: right;
 			    font-style: italic;
 }
+
+.logo-bar a {
+    display: inline-flex; /* Makes the <a> tag behave like a flex container */
+    align-items: center; /* Centers the content vertically */
+    padding-left: 20%; /* Keeps intended padding */
+}
+.logo-bar a img {
+    height: 50px; /* Apply height directly to the image */
+}
+
 
 /* Navigation-Styling */
 nav {
@@ -227,5 +239,33 @@ footer a:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+/* all following css is mobile display bug adressing */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.hamburger-menu {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    /* Additional styling as needed */
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+    nav ul {
+        display: none; /* Hide the menu items initially on smaller screens */
+    }
+    nav ul.show {
+        display: block; /* This class will be toggled by JavaScript */
+    }
 }
 
