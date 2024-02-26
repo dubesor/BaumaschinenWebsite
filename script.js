@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+*/
 
 // Script zum Merken der Menüauswahl			
 document.addEventListener("DOMContentLoaded", function() {
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-*/
+
 
 // Pageload Popup
 window.onload = function() {
